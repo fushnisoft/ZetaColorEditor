@@ -28,43 +28,44 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.colorSliderControl = new ZetaColorEditor.Runtime.InternalControls.CustomColors.ColorSliderUserControl();
-			this.colorAreaControl = new ZetaColorEditor.Runtime.InternalControls.CustomColors.ColorAreaUserControl();
-			this.SuspendLayout();
-			// 
-			// colorSliderControl
-			// 
-			this.colorSliderControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.colorSliderControl.Location = new System.Drawing.Point( 397, 0 );
-			this.colorSliderControl.Name = "colorSliderControl";
-			this.colorSliderControl.Size = new System.Drawing.Size( 38, 417 );
-			this.colorSliderControl.TabIndex = 3;
-			this.colorSliderControl.ValueChangedByUser += new System.EventHandler( this.colorSliderControl_ValueChangedByUser );
-			this.colorSliderControl.LightChanged += new System.EventHandler( this.colorSliderControl_BrightnessChanged );
-			// 
-			// colorAreaControl
-			// 
-			this.colorAreaControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.colorAreaControl.BackColor = System.Drawing.SystemColors.ButtonShadow;
-			this.colorAreaControl.Location = new System.Drawing.Point( 0, 0 );
-			this.colorAreaControl.Name = "colorAreaControl";
-			this.colorAreaControl.Size = new System.Drawing.Size( 382, 417 );
-			this.colorAreaControl.TabIndex = 2;
-			this.colorAreaControl.ValueChangedByUser += new System.EventHandler( this.colorAreaControl_ValueChangedByUser );
-			this.colorAreaControl.HueSaturationChanged += new System.EventHandler( this.colorAreaControl_HueSaturationChanged );
-			// 
-			// ColorAreaAndSliderUserControl
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add( this.colorSliderControl );
-			this.Controls.Add( this.colorAreaControl );
-			this.Name = "ColorAreaAndSliderUserControl";
-			this.Size = new System.Drawing.Size( 435, 417 );
-			this.ResumeLayout( false );
+      this.colorSliderControl = new ZetaColorEditor.Runtime.InternalControls.CustomColors.ColorSliderUserControl();
+      this.colorAreaControl = new ZetaColorEditor.Runtime.InternalControls.CustomColors.ColorAreaUserControl();
+      this.SuspendLayout();
+      // 
+      // colorSliderControl
+      // 
+      this.colorSliderControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.colorSliderControl.Location = new System.Drawing.Point(152, 0);
+      this.colorSliderControl.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+      this.colorSliderControl.Name = "colorSliderControl";
+      this.colorSliderControl.Size = new System.Drawing.Size(38, 310);
+      this.colorSliderControl.TabIndex = 3;
+      this.colorSliderControl.LightChanged += new System.EventHandler(this.colorSliderControl_BrightnessChanged);
+      this.colorSliderControl.ValueChangedByUser += new System.EventHandler(this.colorSliderControl_ValueChangedByUser);
+      // 
+      // colorAreaControl
+      // 
+      this.colorAreaControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.colorAreaControl.BackColor = System.Drawing.SystemColors.ButtonShadow;
+      this.colorAreaControl.Location = new System.Drawing.Point(0, 0);
+      this.colorAreaControl.Name = "colorAreaControl";
+      this.colorAreaControl.Size = new System.Drawing.Size(137, 310);
+      this.colorAreaControl.TabIndex = 2;
+      this.colorAreaControl.HueSaturationChanged += new System.EventHandler(this.colorAreaControl_HueSaturationChanged);
+      this.colorAreaControl.ValueChangedByUser += new System.EventHandler(this.colorAreaControl_ValueChangedByUser);
+      // 
+      // ColorAreaAndSliderUserControl
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.Controls.Add(this.colorSliderControl);
+      this.Controls.Add(this.colorAreaControl);
+      this.Name = "ColorAreaAndSliderUserControl";
+      this.Size = new System.Drawing.Size(190, 310);
+      this.ResumeLayout(false);
 
 		}
 

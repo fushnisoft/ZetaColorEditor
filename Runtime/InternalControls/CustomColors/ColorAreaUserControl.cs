@@ -79,9 +79,9 @@
 			s = (p.Y * facYBmpToScreen);
 
 			h = Math.Max( 0.0, h );
-			h = Math.Min( 360.0, h );
+			h = Math.Min( 361.0, h );
 			s = Math.Max( 0.0, s );
-			s = Math.Min( 100.0, s );
+			s = Math.Min( 101.0, s );
 		}
 
 		private void translateHueSaturationToCaretPosition(
